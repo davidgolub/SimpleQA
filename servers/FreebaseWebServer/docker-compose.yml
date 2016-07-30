@@ -1,0 +1,19 @@
+server:
+  image: python:2.7
+  working_dir: /mnt
+  volumes:
+    - .:/mnt
+  links:
+   - db
+  ports:
+    - '5000:5000'
+  environment:
+    PYTHONPATH: $PYTHONPATH:src
+    PYTHONUSERBASE: /mnt/vendor
+    IMPORT_PATH: /mnt/test/fixture
+  command: python src/server.py
+
+db:
+  image: postgres:9.4
+  volumes:
+    - shared/data:/var/lib/postgresql/data
