@@ -79,10 +79,7 @@ RUN luarocks install graphicsmagick
 RUN apt-get install -y libgraphicsmagick-dev
 
 # Install app dependencies
-RUN luarocks install wsapi-xavante
-RUN luarocks install xavante
 RUN luarocks install cgilua
-RUN luarocks install sailor
 RUN luarocks install nn
 RUN luarocks install nngraph
 RUN luarocks install optim
