@@ -1,4 +1,5 @@
 This contains the code corresponding to the publication Character-Level Question-Answering with Attention found at:
+https://arxiv.org/abs/1604.00727 
 
 To run the evaluation script first build the container:
 # Building the container
