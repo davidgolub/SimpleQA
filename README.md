@@ -3,7 +3,7 @@ https://arxiv.org/abs/1604.00727
 
 To run the evaluation script first build the container:
 # Building the container
-docker build -t simpleqa .
+docker build -t davidgolub:simpleqa .
 
 docker run -it simpleqa /bin/bash
 
