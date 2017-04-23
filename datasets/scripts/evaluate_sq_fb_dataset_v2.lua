@@ -70,6 +70,8 @@ entities_path = '../datasets/SimpleQuestions/test/predictions_entities_' .. para
 facts_path = '../datasets/SimpleQuestions/test/predictions_facts_' .. params.start_index 
 .. '.txt'
 
+results_path = '../datasets/SimpleQuestions/test/results.txt'
+
 -- test predictions
 local predicates_file = 
 	io.open(predicates_path, 'w')
@@ -79,6 +81,9 @@ local entities_file =
 
 local facts_file = 
 	io.open(facts_path, 'w')
+
+local results_file = 
+	io.open(results_path, 'w')
 
 for j = params.start_index, #questions do 
 	dmn.logger:print("On index " .. j)
@@ -152,6 +157,7 @@ for j = params.start_index, #questions do
 
     dmn.logger:print(msg)
 	
+	results_file:write(msg .. "\n")
 	entities_file:write(best_entity .. "\n")
 	predicates_file:write(best_predicate .. "\n")
 	facts_file:write(best_fact .. "\n")
@@ -159,7 +165,10 @@ for j = params.start_index, #questions do
 	entities_file:flush()
 	predicates_file:flush()
 	facts_file:flush()
+	results_file:flush()
 end
 
 entities_file:close()
 predicates_file:close()
+facts_file:close()
+results_file:close()

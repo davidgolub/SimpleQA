@@ -1,5 +1,5 @@
 #!/bin/bash
-docker build -t simpleqa .
+docker pull davidgolub/simpleqa .
 docker run -it simpleqa /bin/bash
 
 # Then inside the container start the freebase server

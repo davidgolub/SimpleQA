@@ -2,9 +2,8 @@ This contains the code corresponding to the publication Character-Level Question
 https://arxiv.org/abs/1604.00727 
 
 To run the evaluation script first build the container:
-# Building the container
-docker build -t davidgolub:simpleqa .
-
+# Pull the container
+docker pull davidgolub/simpleqa
 docker run -it simpleqa /bin/bash
 
 # Then inside the container start the freebase server
