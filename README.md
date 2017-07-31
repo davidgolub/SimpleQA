@@ -5,7 +5,7 @@ To run the evaluation script first build the container:
 # Pull the container
 docker pull davidgolub/simpleqa
 
-docker run -it simpleqa /bin/bash
+docker run -it davidgolub/simpleqa /bin/bash
 
 # Then inside the container start the freebase server
 cd /src/servers/FreebaseWebServer
