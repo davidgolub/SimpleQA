@@ -21,5 +21,5 @@ cd /src/datasets
 
 th scripts/evaluate_sq_fb_dataset_v2.lua
 
-We hope this code helps researchers explore character-level encoder-decoder frameworks to semantic parsing with KBs and many other tasks in NLP! Email golubd@stanford.edu if you have any questions.
+We hope this code helps researchers explore character-level encoder-decoder frameworks to semantic parsing with KBs and many other tasks in NLP! Email golubd [at] stanford.edu if you have any questions.
 
