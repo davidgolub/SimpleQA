@@ -155,7 +155,7 @@ for j = params.start_index, #questions do
 		.. question .. " " .. best_predicate .. " " .. best_entity 
 		.. " FACT:" .. best_fact .. " " .. num_calls .. " " .. best_id
 
-    dmn.logger:print(msg)
+        dmn.logger:print(msg)
 	
 	results_file:write(msg .. "\n")
 	entities_file:write(best_entity .. "\n")
